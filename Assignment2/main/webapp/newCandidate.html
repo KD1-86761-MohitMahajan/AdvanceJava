@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Candidate Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .form-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+        input {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 8px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        input:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+        input::placeholder {
+            color: #999999;
+            font-style: italic;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>New Candidate Registration</h2>
+        <form action="addCandidate" method="post">
+            <div class="form-group">
+                <label for="name">Candidate Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter candidate's name" required>
+            </div>
+            <div class="form-group">
+                <label for="party">Party</label>
+                <input type="text" id="party" name="party" placeholder="Enter party name" required>
+            </div>
+            
+            <button type="submit">Register Candidate</button>
+        </form>
+    </div>
+</body>
+</html>
